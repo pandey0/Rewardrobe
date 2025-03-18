@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+</head>
+<body>
+
+    <h2>Add a New Product</h2>
+
+    <form action="http://localhost:5100/api/adminfunctions/addproduct" method="POST" enctype="multipart/form-data">
+        <!-- Text Inputs -->
+        <label for="name">Product Name:</label>
+        <input type="text" id="name" name="name" value="Cool Shirt" required><br><br>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" value="A stylish and cool shirt for everyone." required><br><br>
+
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price" value="19.99" required><br><br>
+
+        <label for="previousPrice">Previous Price:</label>
+        <input type="text" id="previousPrice" name="previousPrice" value="29.99" required><br><br>
+
+        <label for="category">Category:</label>
+        <input type="text" id="category" name="category" value="Clothing" required><br><br>
+
+        <label for="subcategory">Subcategory:</label>
+        <input type="text" id="subcategory" name="subcategory" value="T-Shirts" required><br><br>
+
+        <label for="size">Size (comma separated):</label>
+        <input type="text" id="size" name="size" value="S,M,L" required><br><br>
+
+        <label for="stock">Stock:</label>
+        <input type="text" id="stock" name="stock" value="150" required><br><br>
+
+        <label for="colors">Colors (comma separated):</label>
+        <input type="text" id="colors" name="colors" value="Red,Blue,Green" required><br><br>
+
+        <label for="rating">Rating:</label>
+        <input type="text" id="rating" name="rating" value="4.5" required><br><br>
+
+        <label for="reviews">Reviews:</label>
+        <input type="text" id="reviews" name="reviews" value="120" required><br><br>
+
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand" name="brand" value="CoolBrand" required><br><br>
+
+        <label for="sku">SKU:</label>
+        <input type="text" id="sku" name="sku" value="SHIRT1234" required><br><br>
+
+        <label for="material">Material:</label>
+        <input type="text" id="material" name="material" value="Cotton" required><br><br>
+
+        <label for="weight">Weight:</label>
+        <input type="text" id="weight" name="weight" value="0.5" required><br><br>
+
+        <label for="tags">Tags (comma separated):</label>
+        <input type="text" id="tags" name="tags" value="fashion,shirt,casual" required><br><br>
+
+        <label for="availability">Availability:</label>
+        <input type="text" id="availability" name="availability" value="in stock" required><br><br>
+
+        <label for="trending">Trending:</label>
+        <input type="text" id="trending" name="trending" value="true" required><br><br>
+
+        <label for="stockQuantity">Stock Quantity:</label>
+        <input type="text" id="stockQuantity" name="stockQuantity" value="100" required><br><br>
+
+        <!-- File Inputs (images) -->
+        <label for="image1">Image 1:</label>
+        <input type="file" id="image1" name="image1" accept="image/*" required><br><br>
+
+        <label for="image2">Image 2:</label>
+        <input type="file" id="image2" name="image2" accept="image/*" required><br><br>
+
+        <label for="image3">Image 3:</label>
+        <input type="file" id="image3" name="image3" accept="image/*" required><br><br>
+
+        <label for="image4">Image 4:</label>
+        <input type="file" id="image4" name="image4" accept="image/*" required><br><br>
+
+        <label for="image5">Image 5:</label>
+        <input type="file" id="image5" name="image5" accept="image/*" required><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Add Product</button>
+    </form>
+
+</body>
+</html>
+
